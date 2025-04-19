@@ -92,3 +92,9 @@ footer {
     gap: 0.5rem;
     justify-content: center;
 }
+
+.criteria-info {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
