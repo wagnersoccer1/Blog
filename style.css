@@ -98,3 +98,23 @@ footer {
     margin: 2rem auto;
     padding: 0 1rem;
 }
+
+.sort-bar {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.criteria-info-inline summary {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.criteria-info-inline div {
+    max-width: 600px;
+    margin-top: 0.5rem;
+}
