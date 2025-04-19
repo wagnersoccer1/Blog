@@ -4,18 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const sortControls = document.querySelector(".sort-controls");
   sortControls.innerHTML = `
-    <form id="sort-form">
-      <fieldset>
-        <legend>Sort by criteria:</legend>
-        <label><input type="checkbox" name="criteria" value="price" checked> Price</label>
-        <label><input type="checkbox" name="criteria" value="variety" checked> Variety</label>
-        <label><input type="checkbox" name="criteria" value="seating" checked> Seating</label>
-        <label><input type="checkbox" name="criteria" value="hours" checked> Hours</label>
-        <label><input type="checkbox" name="criteria" value="overall"> Overall</label>
-      </fieldset>
-      <button type="button" id="reset-sort">Reset</button>
-      <p id="active-criteria" style="margin-top: 1rem; font-style: italic;"></p>
-    </form>
+    <fieldset id="sort-fieldset">
+      <legend>Sort by criteria:</legend>
+      <label><input type="checkbox" name="criteria" value="price" checked> Price</label>
+      <label><input type="checkbox" name="criteria" value="variety" checked> Variety</label>
+      <label><input type="checkbox" name="criteria" value="seating" checked> Seating</label>
+      <label><input type="checkbox" name="criteria" value="hours" checked> Hours</label>
+      <label><input type="checkbox" name="criteria" value="overall"> Overall</label>
+    </fieldset>
+    <button type="button" id="reset-sort">Reset</button>
+    <p id="active-criteria" style="margin-top: 1rem; font-style: italic;"></p>
   `;
 
   const activeCriteriaDisplay = document.getElementById("active-criteria");
@@ -94,11 +92,8 @@ document.addEventListener("DOMContentLoaded", () => {
     animateReorder(sorted);
   };
 
-  sortControls.addEventListener("change", (e) => {
-    if (e.target.name === "criteria") {
-      sortArticles();
-    }
-  });
+  const fieldset = document.getElementById("sort-fieldset");
+  fieldset.addEventListener("change", sortArticles);
 
   sortControls.querySelector("#reset-sort").addEventListener("click", () => {
     const checkboxes = sortControls.querySelectorAll("input[name='criteria']");
