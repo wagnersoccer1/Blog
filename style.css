@@ -81,3 +81,13 @@ footer {
     background-color: #fff;
     cursor: pointer;
 }
+
+.sort-controls fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
