@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pittsburgh Coffee Rankings</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -19,10 +20,37 @@
   </section>
 
   <main>
+  <div class="sort-controls">
+    <label for="sort-by">Sort by:</label>
+    <select id="sort-by">
+      <option value="default">Default</option>
+      <option value="price">Price</option>
+      <option value="variety">Variety</option>
+      <option value="seating">Seating</option>
+      <option value="hours">Hours</option>
+    </select>
+  </div>
+  <section class="criteria">
+    <h2>Why This Site?</h2>
+    <p>After traveling the world and using various sites to find the best coffee shops, I wondered to myself, “Why are we subject to mediocre, verbose listicles of the places to get a cup of joe when it comes to Pittsburgh?” We should aspire to have proper evaluations of not only the coffee, but also the components that make your favorite coffee shop truly special.</p>
+    <p>I intend to do that on the dimensions of price, flavor, variety of options, seating space, and the all-important hours. Without further ado, let’s jump into my criteria and explore the best that the ‘Burgh has to offer.</p>
+    <p><strong>Note:</strong> I will review local coffee chains, but don’t expect to see Starbucks or Dunkin here.</p>
+
+    <h3>Price:</h3>
+    <p>Times are a-changin’. The days of a $2 cup of coffee may be relics of the pre-pandemic, but that doesn’t mean that we shouldn’t be discriminating on how much our coffee costs. Our metrics are the espresso and the latte sans add-ons.</p>
+
+    <h3>Variety of options:</h3>
+    <p>Not all of us drink a black coffee. Some of us, myself included, like what is arguably more milkshake than coffee beverage at times. A great coffee shop caters to a spectrum of gastronomic experiences, and an exceptional one puts their own spin on our caffeine vices.</p>
+
+    <h3>Seating Space:</h3>
+    <p>There is (almost) nothing as disappointing as going to a coffee shop to read, do work, or just hang out and people watch than to leave empty-seated. For whatever reason, this is never discussed when discussing coffee shops. Third spaces need the chairs to put butts in seats.</p>
+
+    <h3>Hours:</h3>
+    <p>Pittsburgh can be a sleepy city. This is in direct opposition to the caffeination we crave. While I respect a shop that opens at 10am and closes at 2pm, there is a cost.</p>
+  </section>
     <article class="shop">
       <h2>Redstart Roasters <span class="score">20/25 cups, 16/20</span></h2>
       <ul>
-        <li><strong>Flavor:</strong> Smooth with a chocolate finish, subtly bitter yet refreshing.</li>
         <li><strong>Price:</strong> Espresso $3, Latte $4</li>
         <li><strong>Variety:</strong> Basics + specials like the Mole Latte.</li>
         <li><strong>Seating:</strong> Library vibes, plenty of chargers and comfy seating.</li>
@@ -32,131 +60,118 @@
     <article class="shop">
       <h2>KLVN Coffee Lab <span class="score">17/25 cups, 13/20</span></h2>
       <ul>
-        <li><strong>Flavor:</strong> —</li>
-        <li><strong>Price:</strong> Espresso $3.50, Latte $4.50</li>
-        <li><strong>Variety:</strong> A few rotating specials.</li>
-        <li><strong>Seating:</strong> Stylish but not the coziest.</li>
-        <li><strong>Hours:</strong> Weekdays 7am–4pm, Weekends 8am–4pm</li>
+        <li><strong>Price:</strong> ☕☕☕☕ Espresso $3.50, Latte $4.50</li>
+        <li><strong>Variety:</strong> ☕☕☕ A few rotating specials.</li>
+        <li><strong>Seating:</strong> ☕☕☕ Stylish but not the coziest.</li>
+        <li><strong>Hours:</strong> ☕☕☕☕ Weekdays 7am–4pm, Weekends 8am–4pm</li>
       </ul>
     </article>
     <article class="shop">
       <h2>LV Coffee Project <span class="score">18/25 cups, 14/20</span></h2>
       <ul>
-        <li><strong>Flavor:</strong> —</li>
-        <li><strong>Price:</strong> Espresso $3.50, Latte $5</li>
-        <li><strong>Variety:</strong> Concise list, some premium drinks.</li>
-        <li><strong>Seating:</strong> Great for working.</li>
-        <li><strong>Hours:</strong> Weekdays 8:30am–2:30pm, Weekends 9am–3pm</li>
+        <li><strong>Price:</strong> ☕☕☕☕ Espresso $3.50, Latte $5</li>
+        <li><strong>Variety:</strong> ☕☕☕ Concise list, some premium drinks.</li>
+        <li><strong>Seating:</strong> ☕☕☕☕☕ Great for working.</li>
+        <li><strong>Hours:</strong> ☕☕ Weekdays 8:30am–2:30pm, Weekends 9am–3pm</li>
       </ul>
     </article>
     <article class="shop">
   <h2>Margaux <span class="score"></span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
     <li><strong>Price:</strong> Espresso $3.50, Latte $5.25</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> —</li>
+    <li><strong>Variety:</strong> ☕</li>
+    <li><strong>Seating:</strong> ☕</li>
     <li><strong>Hours:</strong> Weekdays 8am–3pm, Weekends 9am–3pm (Seating until 11pm on weekdays)</li>
   </ul>
 </article>
 <article class="shop">
   <h2>Inkwell Coffee <span class="score">18/25 cups, 13/20</span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
-    <li><strong>Price:</strong> Espresso $3, Latte $4.25</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> Some tables and couches, but very limited availability.</li>
-    <li><strong>Hours:</strong> 8am–5pm daily</li>
+    <li><strong>Price:</strong> ☕☕☕☕ Espresso $3, Latte $4.25</li>
+    <li><strong>Variety:</strong> ☕☕☕☕</li>
+    <li><strong>Seating:</strong> ☕ Some tables and couches, but very limited availability.</li>
+    <li><strong>Hours:</strong> ☕☕☕☕ 8am–5pm daily</li>
   </ul>
 </article>
 <article class="shop">
   <h2>61C Cafe <span class="score">19/25 cups, 17/20</span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
-    <li><strong>Price:</strong> Espresso $1.40, Latte $2.20</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> Plenty of small tables, often busy.</li>
-    <li><strong>Hours:</strong> 7am–9pm daily</li>
+    <li><strong>Price:</strong> ☕☕☕☕☕ Espresso $1.40, Latte $2.20</li>
+    <li><strong>Variety:</strong> ☕☕☕☕</li>
+    <li><strong>Seating:</strong> ☕☕☕ Plenty of small tables, often busy.</li>
+    <li><strong>Hours:</strong> ☕☕☕☕☕ 7am–9pm daily</li>
   </ul>
 </article>
 <article class="shop">
   <h2>Sidecar Cafe <span class="score">17/25 cups, 13/20</span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
-    <li><strong>Price:</strong> Espresso $3, Latte $4.50</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> Few tables, but usually a seat available.</li>
-    <li><strong>Hours:</strong> Weekdays + Saturday: 7am–7pm, Sunday: 9am–3pm</li>
+    <li><strong>Price:</strong> ☕☕☕☕☕ Espresso $3, Latte $4.50</li>
+    <li><strong>Variety:</strong> ☕☕</li>
+    <li><strong>Seating:</strong> ☕☕☕ Few tables, but usually a seat available.</li>
+    <li><strong>Hours:</strong> ☕☕☕☕ Weekdays + Saturday: 7am–7pm, Sunday: 9am–3pm</li>
   </ul>
 </article>
 <article class="shop">
   <h2>Jitters Cafe <span class="score">17/25 cups, 13/20</span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
-    <li><strong>Price:</strong> Espresso $1.75, Latte $3.25</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> Very tight; only a few tables.</li>
-    <li><strong>Hours:</strong> 6am–6pm daily</li>
+    <li><strong>Price:</strong> ☕☕☕☕☕ Espresso $1.75, Latte $3.25</li>
+    <li><strong>Variety:</strong> ☕☕☕</li>
+    <li><strong>Seating:</strong> ☕ Very tight; only a few tables.</li>
+    <li><strong>Hours:</strong> ☕☕☕☕ 6am–6pm daily</li>
   </ul>
 </article>
 <article class="shop">
   <h2>Delanie’s Coffee, Shadyside <span class="score">17/25 cups, 15/20</span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
-    <li><strong>Price:</strong> Espresso $3, Latte $4.50</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> —</li>
-    <li><strong>Hours:</strong> Weekdays + Saturday: 7am–7pm, Sunday: 7am–6pm</li>
+    <li><strong>Price:</strong> ☕☕☕☕ Espresso $3, Latte $4.50</li>
+    <li><strong>Variety:</strong> ☕☕☕☕</li>
+    <li><strong>Seating:</strong> ☕☕☕</li>
+    <li><strong>Hours:</strong> ☕☕☕☕ Weekdays + Saturday: 7am–7pm, Sunday: 7am–6pm</li>
   </ul>
 </article>
 <article class="shop">
   <h2>Ineffable Cà Phê <span class="score">21/25 cups, 17/20</span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
-    <li><strong>Price:</strong> Espresso $3, Latte $5</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> —</li>
-    <li><strong>Hours:</strong> 8am–3pm daily</li>
+    <li><strong>Price:</strong> ☕☕ Espresso $3, Latte $5</li>
+    <li><strong>Variety:</strong> ☕☕☕☕☕</li>
+    <li><strong>Seating:</strong> ☕☕☕☕☕</li>
+    <li><strong>Hours:</strong> ☕☕☕☕ 8am–3pm daily</li>
   </ul>
 </article>
 <article class="shop">
   <h2>61B Cafe <span class="score">17/25 cups, 14/20</span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
-    <li><strong>Price:</strong> Espresso $2.25, Latte $3.50</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> Plenty of small tables, often busy.</li>
-    <li><strong>Hours:</strong> Weekdays 6am–7pm, Weekends 7am–7pm</li>
+    <li><strong>Price:</strong> ☕☕☕☕☕ Espresso $2.25, Latte $3.50</li>
+    <li><strong>Variety:</strong> ☕☕☕</li>
+    <li><strong>Seating:</strong> ☕☕☕ Plenty of small tables, often busy.</li>
+    <li><strong>Hours:</strong> ☕☕☕☕☕ Weekdays 6am–7pm, Weekends 7am–7pm</li>
   </ul>
 </article>
 <article class="shop">
   <h2>Redhawk Coffee Roasters, Oakland <span class="score">15/25 cups, 11/20</span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
-    <li><strong>Price:</strong> Espresso $3.25, Latte $4.25</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> Limited indoor tables; some outdoor seating.</li>
-    <li><strong>Hours:</strong> Weekdays 7am–6pm, Weekends 8am–4pm</li>
+    <li><strong>Price:</strong> ☕☕☕☕ Espresso $3.25, Latte $4.25</li>
+    <li><strong>Variety:</strong> ☕☕</li>
+    <li><strong>Seating:</strong> ☕ Limited indoor tables; some outdoor seating.</li>
+    <li><strong>Hours:</strong> ☕☕☕☕ Weekdays 7am–6pm, Weekends 8am–4pm</li>
   </ul>
 </article>
 <article class="shop">
   <h2>De Fer Coffee, Strip District <span class="score">21/25 cups, 18/20</span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
-    <li><strong>Price:</strong> Espresso $3.60, Latte $5.25</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> Two floors, plenty of seating.</li>
-    <li><strong>Hours:</strong> Sun 8am–5pm, Mon–Thu 7am–5pm, Fri 7am–9pm, Sat 8am–9pm</li>
+    <li><strong>Price:</strong> ☕☕☕☕ Espresso $3.60, Latte $5.25</li>
+    <li><strong>Variety:</strong> ☕☕☕☕☕</li>
+    <li><strong>Seating:</strong> ☕☕☕☕☕ Two floors, plenty of seating.</li>
+    <li><strong>Hours:</strong> ☕☕☕☕ Sun 8am–5pm, Mon–Thu 7am–5pm, Fri 7am–9pm, Sat 8am–9pm</li>
   </ul>
 </article>
 <article class="shop">
   <h2>Carnegie Coffee Company <span class="score">23/25 cups, 18/20</span></h2>
   <ul>
-    <li><strong>Flavor:</strong> —</li>
-    <li><strong>Price:</strong> Espresso $2.50, Latte $3.20</li>
-    <li><strong>Variety:</strong> —</li>
-    <li><strong>Seating:</strong> Two floors, plenty of seating.</li>
-    <li><strong>Hours:</strong> Weekdays + Saturday: 7am–6pm, Sunday: 8am–3pm</li>
+    <li><strong>Price:</strong> ☕☕☕☕☕ Espresso $2.50, Latte $3.20</li>
+    <li><strong>Variety:</strong> ☕☕☕☕</li>
+    <li><strong>Seating:</strong> ☕☕☕☕☕ Two floors, plenty of seating.</li>
+    <li><strong>Hours:</strong> ☕☕☕☕ Weekdays + Saturday: 7am–6pm, Sunday: 8am–3pm</li>
   </ul>
 </article>
 
