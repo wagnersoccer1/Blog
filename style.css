@@ -53,11 +53,6 @@ main {
 .shop li {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
-    transition: transform 0.3s ease-in-out;
-}
-
-.shop li:hover {
-    transform: scale(1.1) rotate(-5deg);
 }
 
 footer {
