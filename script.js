@@ -4,16 +4,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const sortControls = document.querySelector(".sort-controls");
   sortControls.innerHTML = `
-    <fieldset>
-      <legend>Sort by criteria:</legend>
-      <label><input type="checkbox" name="criteria" value="price" checked> Price</label>
-      <label><input type="checkbox" name="criteria" value="variety" checked> Variety</label>
-      <label><input type="checkbox" name="criteria" value="seating" checked> Seating</label>
-      <label><input type="checkbox" name="criteria" value="hours" checked> Hours</label>
-      <label><input type="checkbox" name="criteria" value="overall"> Overall</label>
-    </fieldset>
-    <button id="reset-sort">Reset</button>
-    <p id="active-criteria" style="margin-top: 1rem; font-style: italic;"></p>
+    <form id="sort-form">
+      <fieldset>
+        <legend>Sort by criteria:</legend>
+        <label><input type="checkbox" name="criteria" value="price" checked> Price</label>
+        <label><input type="checkbox" name="criteria" value="variety" checked> Variety</label>
+        <label><input type="checkbox" name="criteria" value="seating" checked> Seating</label>
+        <label><input type="checkbox" name="criteria" value="hours" checked> Hours</label>
+        <label><input type="checkbox" name="criteria" value="overall"> Overall</label>
+      </fieldset>
+      <button type="button" id="reset-sort">Reset</button>
+      <p id="active-criteria" style="margin-top: 1rem; font-style: italic;"></p>
+    </form>
   `;
 
   const activeCriteriaDisplay = document.getElementById("active-criteria");
