@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const sortControls = document.querySelector(".sort-controls");
   sortControls.innerHTML = `
-    <div class="sort-content-wrapper">
+    <div class="sort-content-wrapper left-align">
       <fieldset id="sort-fieldset">
         <legend>Sort by criteria:</legend>
         <label><input type="checkbox" name="criteria" value="price" checked> Price</label>
