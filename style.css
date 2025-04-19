@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
 
 body {
@@ -97,24 +98,4 @@ footer {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 1rem;
-}
-
-.sort-bar {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.criteria-info-inline summary {
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-}
-
-.criteria-info-inline div {
-    max-width: 600px;
-    margin-top: 0.5rem;
 }
