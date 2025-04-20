@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   sortControls.querySelector("#reset-sort").addEventListener("click", () => {
     const checkboxes = sortControls.querySelectorAll("input[name='criteria']");
     checkboxes.forEach(box => {
-      box.checked = box.value !== "overall";
+      box.checked = false;
     });
     sortArticles();
   });
