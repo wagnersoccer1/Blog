@@ -67,6 +67,43 @@ header nav a:hover {
   padding: 0 2rem;
 }
 
+.ranking-system {
+  margin-top: 2rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ranking-system summary {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.ranking-details {
+  background: var(--card-background);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  margin-top: 1rem;
+}
+
+.ranking-details h3 {
+  color: var(--text-color);
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.ranking-details h3:first-child {
+  margin-top: 0;
+}
+
+.ranking-details p {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -82,6 +119,7 @@ main {
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
   border: 1px solid var(--border-color);
+  padding: 2rem;
 }
 
 .shop:hover {
@@ -90,10 +128,11 @@ main {
 }
 
 .shop img {
-  width: 100%;
+  width: calc(100% + 4rem);
   height: 250px;
   object-fit: cover;
   border-bottom: 1px solid var(--border-color);
+  margin: -2rem -2rem 2rem -2rem;
 }
 
 .shop-content {
@@ -103,12 +142,11 @@ main {
 .shop h2 {
   font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
-  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .score {
@@ -120,13 +158,16 @@ main {
 .shop ul {
   list-style-type: none;
   margin-top: 1rem;
-  padding: 1.5rem;
 }
 
 .shop li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-size: 0.95rem;
   color: var(--text-light);
+}
+
+.shop li:last-child {
+  margin-bottom: 0;
 }
 
 .shop li strong {
@@ -136,12 +177,12 @@ main {
 }
 
 .shop p {
-  padding: 0 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .sort-controls {
-  max-width: 1200px;
-  margin: 2rem auto;
+  width: 100%;
+  margin: 0 0 2rem 0;
   padding: 1.5rem;
   background: var(--card-background);
   border-radius: 12px;
@@ -150,39 +191,23 @@ main {
 
 .sort-content-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
   align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 #sort-fieldset {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
   border: none;
   padding: 0;
   margin: 0;
+  flex: 1;
 }
 
 #sort-fieldset legend {
   font-weight: 600;
   margin-bottom: 0.5rem;
-  width: 100%;
-}
-
-#sort-fieldset label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  background: #f5f5f5;
-  border-radius: 6px;
-  transition: background-color 0.2s;
-}
-
-#sort-fieldset label:hover {
-  background: #eaeaea;
 }
 
 #reset-sort {
@@ -198,31 +223,6 @@ main {
 
 #reset-sort:hover {
   background: #c41530;
-}
-
-#active-criteria {
-  width: 100%;
-  margin-top: 1rem;
-  color: var(--text-light);
-}
-
-.criteria-info {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: var(--card-background);
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
-}
-
-.criteria-info h3 {
-  margin: 1.5rem 0 0.5rem;
-  color: var(--text-color);
-}
-
-.criteria-info p {
-  color: var(--text-light);
-  margin-bottom: 1rem;
 }
 
 footer {
