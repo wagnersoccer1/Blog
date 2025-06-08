@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <label><input type="checkbox" name="criteria" value="variety" checked> Variety</label>
         <label><input type="checkbox" name="criteria" value="seating" checked> Seating</label>
         <label><input type="checkbox" name="criteria" value="hours" checked> Hours</label>
+        <label><input type="checkbox" name="criteria" value="recency"> Most recently reviewed</label>
         <label><input type="checkbox" name="criteria" value="overall"> Overall</label>
-        <label><input type="checkbox" name="criteria" value="recency"> Most Recent</label>
       </fieldset>
       <button type="button" id="reset-sort">Reset</button>
       <p id="active-criteria" style="margin-top: 1rem; font-style: italic;"></p>
