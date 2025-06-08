@@ -1,7 +1,13 @@
 /* 
- * Main Stylesheet for Blog Site
- * This stylesheet defines the visual styling for a restaurant review blog
- * Using CSS custom properties for consistent theming and easy modifications
+ * Main Stylesheet for Pittsburgh Coffee Rankings: Beyond the Taste
+ * This stylesheet defines the visual styling for our coffee shop review site
+ * Key features:
+ * - Responsive grid layout for shop cards
+ * - Prominent display of overall scores
+ * - Interactive sorting controls
+ * - Consistent typography using Inter font
+ * - Modern card-based design with hover effects
+ * Last updated: 2025
  */
 
 /* Import Inter font family for consistent typography */

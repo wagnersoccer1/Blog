@@ -1,12 +1,14 @@
 /**
- * Restaurant Review Blog - Interactive Sorting System
- * This script handles the dynamic sorting functionality for restaurant cards
+ * Pittsburgh Coffee Rankings: Beyond the Taste - Interactive Features
+ * This script handles the dynamic sorting and interactivity of coffee shop cards
  * Features include:
- * - Multi-criteria sorting based on user selection
- * - Animated reordering of restaurant cards
+ * - Multi-criteria sorting (price, variety, seating, hours)
+ * - Overall score sorting
+ * - Review recency sorting
+ * - Animated card reordering
  * - Interactive hover effects
  * - Real-time sorting criteria display
- * - Review recency sorting
+ * Last updated: 2025
  */
 
 // Initialize the sorting system when the DOM is fully loaded
