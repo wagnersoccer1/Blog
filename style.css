@@ -146,6 +146,8 @@ main {
   object-fit: cover;
   border-bottom: 1px solid var(--border-color);
   margin: -2rem -2rem 2rem -2rem;
+  object-position: center;
+  display: block;
 }
 
 .shop-content {
@@ -195,47 +197,65 @@ main {
 
 .sort-controls {
   width: 100%;
-  margin: 0 0 2rem 0;
-  padding: 1.5rem;
-  background: var(--card-background);
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
+  margin: 1rem 0 3rem 0;
+  padding: 0.5rem 2rem;
+  text-align: center;
 }
 
 .sort-content-wrapper {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #sort-fieldset {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   border: none;
   padding: 0;
   margin: 0;
-  flex: 1;
 }
 
 #sort-fieldset legend {
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+#sort-fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: color 0.2s;
+}
+
+#sort-fieldset label:hover {
+  color: var(--text-color);
+}
+
+#sort-fieldset input[type="checkbox"] {
+  width: 1.2em;
+  height: 1.2em;
 }
 
 #reset-sort {
-  padding: 0.5rem 1rem;
-  background: var(--primary-color);
-  color: white;
-  border: none;
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
 }
 
 #reset-sort:hover {
-  background: #c41530;
+  background: var(--primary-color);
+  color: white;
 }
 
 footer {
