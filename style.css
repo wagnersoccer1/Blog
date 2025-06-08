@@ -177,7 +177,7 @@ main {
 
 .shop li {
   margin-bottom: 2rem;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--text-light);
 }
 
@@ -185,10 +185,21 @@ main {
   margin-bottom: 0;
 }
 
+.shop li br:first-of-type {
+  margin-top: 0.8rem;
+  content: '';
+  display: block;
+}
+
+.shop li br + text {
+  font-size: 0.95rem;
+}
+
 .shop li strong {
   color: var(--text-color);
-  display: block;
-  margin-bottom: 0.25rem;
+  display: inline;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .shop p {
