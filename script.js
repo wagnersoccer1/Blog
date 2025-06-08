@@ -42,14 +42,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const animateReorder = (sortedArticles) => {
     articles.forEach(article => {
-      article.style.transition = "opacity 0.3s";
+      article.style.transition = "all 0.3s ease-out";
       article.style.opacity = "0";
+      article.style.transform = "translateY(20px)";
     });
 
     setTimeout(() => {
-      sortedArticles.forEach(article => {
+      sortedArticles.forEach((article, index) => {
+        article.style.opacity = "0";
+        article.style.transform = "translateY(20px)";
         shopContainer.appendChild(article);
-        article.style.opacity = "1";
+        
+        setTimeout(() => {
+          article.style.opacity = "1";
+          article.style.transform = "translateY(0)";
+        }, index * 50);
       });
     }, 300);
   };
@@ -64,8 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const sortArticles = () => {
-    const selected = Array.from(sortControls.querySelectorAll("input[name='criteria']:checked"))
-                          .map(input => input.value);
+    const selected = Array.from(document.querySelectorAll("input[name='criteria']:checked"))
+                        .map(input => input.value);
 
     updateActiveCriteriaDisplay(selected);
 
@@ -97,13 +104,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const fieldset = document.getElementById("sort-fieldset");
   fieldset.addEventListener("change", sortArticles);
 
-  sortControls.querySelector("#reset-sort").addEventListener("click", () => {
-    const checkboxes = sortControls.querySelectorAll("input[name='criteria']");
+  document.getElementById("reset-sort").addEventListener("click", () => {
+    const checkboxes = document.querySelectorAll("input[name='criteria']");
     checkboxes.forEach(box => {
       box.checked = false;
     });
     sortArticles();
   });
 
-  sortArticles(); // Initial sort and display
+  articles.forEach(article => {
+    article.addEventListener("mouseenter", () => {
+      article.style.transform = "translateY(-4px)";
+      article.style.boxShadow = "0 12px 24px rgba(0, 0, 0, 0.1)";
+    });
+
+    article.addEventListener("mouseleave", () => {
+      article.style.transform = "translateY(0)";
+      article.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.06)";
+    });
+  });
+
+  sortArticles();
 });

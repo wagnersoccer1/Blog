@@ -3,55 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pittsburgh Coffee Rankings</title>
+  <title>Pittsburgh Coffee Rankings | The Ultimate Guide</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  <meta name="description" content="Discover the best coffee shops in Pittsburgh, rated by price, variety, seating, and hours. Your ultimate guide to Pittsburgh's coffee scene." />
 </head>
-<body style="background: linear-gradient(to bottom, #f9f5f0, #e8e3dd); color: #333;">
-  <header style="position: relative;">
-    <h1 style="font-size: 3rem;">Pittsburgh Coffee Rankings</h1>
-    <nav style="position: absolute; top: 0.5rem; left: 2rem;">
-      <a href="Writing.html" style="text-decoration: none; font-size: 0.9rem; color: white;">Writing</a>
+<body>
+  <header>
+    <h1>Pittsburgh Coffee Rankings</h1>
+    <nav>
+      <a href="Writing.html">Writing</a>
+      <a href="#about">About</a>
     </nav>
   </header>
 
   <section class="intro">
     <p>
       After traveling the world and using various sites to find the best coffee shops, I wondered: why are we stuck with mediocre listicles for Pittsburgh? I'm rating local coffee shops by price, variety, seating, and hours. 
-      <br><strong>Note:</strong> I will review local coffee chains, but don’t expect to see Starbucks or Dunkin here.
+      <br><strong>Note:</strong> I will review local coffee chains, but don't expect to see Starbucks or Dunkin here.
     </p>
   </section>
 
   <main>
-    <summary><h2>Info On Criteria</h2></summary>
+    <div class="sort-controls">
+      <div class="sort-content-wrapper">
+        <fieldset id="sort-fieldset">
+          <legend>Sort by criteria:</legend>
+          <label><input type="checkbox" name="criteria" value="price" checked> Price</label>
+          <label><input type="checkbox" name="criteria" value="variety" checked> Variety</label>
+          <label><input type="checkbox" name="criteria" value="seating" checked> Seating</label>
+          <label><input type="checkbox" name="criteria" value="hours" checked> Hours</label>
+          <label><input type="checkbox" name="criteria" value="overall"> Overall</label>
+        </fieldset>
+        <button type="button" id="reset-sort">Reset</button>
+        <p id="active-criteria"></p>
+      </div>
+    </div>
+
     <details class="criteria-info">
-    
-    <h3>Price:</h3>
-    <p>Times are a-changin’. The days of a $2 cup of coffee may be relics of the pre-pandemic, but that doesn’t mean that we shouldn’t be discriminating on how much our coffee costs. Our metrics are the espresso and the latte (12 oz) sans add-ons.</p>
+      <summary><h2>About Our Rating System</h2></summary>
+      <h3>Price:</h3>
+      <p>Times are a-changin'. The days of a $2 cup of coffee may be relics of the pre-pandemic, but that doesn't mean that we shouldn't be discriminating on how much our coffee costs. Our metrics are the espresso and the latte (12 oz) sans add-ons.</p>
 
-    <h3>Variety of options:</h3>
-    <p>Not all of us drink a black coffee. Some of us, myself included, like what is at times arguably more milkshake than coffee beverage. A great coffee shop caters to a spectrum of gastronomic experiences, and an exceptional one puts their own spin on our caffeine vices.</p>
+      <h3>Variety of options:</h3>
+      <p>Not all of us drink a black coffee. Some of us, myself included, like what is at times arguably more milkshake than coffee beverage. A great coffee shop caters to a spectrum of gastronomic experiences, and an exceptional one puts their own spin on our caffeine vices.</p>
 
-    <h3>Seating Space:</h3>
-    <p>There is (almost) nothing as disappointing as going to a coffee shop to read, do work, or just hang out and people watch than to leave empty-seated. For whatever reason, this is never discussed when discussing coffee shops. These spaces need the chairs to put butts in seats.</p>
+      <h3>Seating Space:</h3>
+      <p>There is (almost) nothing as disappointing as going to a coffee shop to read, do work, or just hang out and people watch than to leave empty-seated. For whatever reason, this is never discussed when discussing coffee shops. These spaces need the chairs to put butts in seats.</p>
 
-    <h3>Hours:</h3>
-    <p>Pittsburgh can be a sleepy city. This is in direct opposition to the caffeination we crave. While I respect a shop that opens at 10am and closes at 2pm, there is a cost.</p>
+      <h3>Hours:</h3>
+      <p>Pittsburgh can be a sleepy city. This is in direct opposition to the caffeination we crave. While I respect a shop that opens at 10am and closes at 2pm, there is a cost.</p>
 
-    <h3><strong>Why Not Flavor?</strong></h3>
-    <p>Long story short, tastes vary. I'm not nearly an expert on flavor, and there are already so many coffee sites that pretend to be; no need to crowd the space further.</p>
-  </details>
-  
-  <div class="sort-controls">
-    <label for="sort-by">Sort by:</label>
-    <select id="sort-by">
-      <option value="default">Default</option>
-      <option value="price">Price</option>
-      <option value="variety">Variety</option>
-      <option value="seating">Seating</option>
-      <option value="hours">Hours</option>
-    </select>
-  </div>
+      <h3>Why Not Flavor?</h3>
+      <p>Long story short, tastes vary. I'm not nearly an expert on flavor, and there are already so many coffee sites that pretend to be; no need to crowd the space further.</p>
+    </details>
+
     <article class="shop">
       <h2 style="font-size: 1.8rem;">Redstart Roasters <span class="score">Overall: 17/20</span></h2>
       <img src="Images/redstart.jpg" alt="Interior of Redstart Roasters" style="width: 100%; height: 300px; object-fit: cover;" />
@@ -139,8 +145,8 @@
       </ul>
     </article>
     <article class="shop">
-      <h2 style="font-size: 1.8rem;">Delanie’s Coffee, Shadyside <span class="score">Overall: 13/20</span></h2>
-      <img src="Images/Delanie's.jpg" alt="Interior of Delanie’s Coffee" style="width: 100%; height: 300px; object-fit: cover;" />
+      <h2 style="font-size: 1.8rem;">Delanie's Coffee, Shadyside <span class="score">Overall: 13/20</span></h2>
+      <img src="Images/Delanie's.jpg" alt="Interior of Delanie's Coffee" style="width: 100%; height: 300px; object-fit: cover;" />
       <p style="font-size: 0.8rem; color: #555;">Last reviewed on: April 2025</p>
       <ul>
         <li><strong>Price:</strong> ☕☕<br>Espresso $3, Latte $4.50</li>
@@ -178,7 +184,7 @@
       <ul>
         <li><strong>Price:</strong> ☕☕<br>Espresso $3.25, Latte $4.25</li>
         <li><strong>Variety:</strong> ☕☕</li>
-        <li><strong>Seating:</strong> ☕<br>Just a few tables indoors, with some outdoors for the few months a year where it’s pleasant enough to use them. They are almost always taken by busy college students or people coming to and from the medical facilities nearby. Best of luck. 
+        <li><strong>Seating:</strong> ☕<br>Just a few tables indoors, with some outdoors for the few months a year where it's pleasant enough to use them. They are almost always taken by busy college students or people coming to and from the medical facilities nearby. Best of luck. 
         </li>
         <li><strong>Hours:</strong> ☕☕☕☕<br>Weekdays: 7am–6pm <br>Weekends: 8am–4pm</li>
       </ul>
@@ -217,11 +223,33 @@
         <li><strong>Hours:</strong> ☕☕<br>Weekdays: 8am-3pm <br>Sat: 9am-3pm <br>Sun: 9am-1pm</li>
       </ul>
     </article>
+    <article class="shop">
+      <h2 style="font-size: 1.8rem;">Shibam Coffee <span class="score">Overall: 15/20</span></h2>
+      <img src="Images/Shibam.jpg" alt="Interior of Shibam Coffee" style="width: 100%; height: 300px; object-fit: cover;" />
+      <p style="font-size: 0.8rem; color: #555;">Last reviewed on: June 2025</p>
+      <ul>
+        <li><strong>Price:</strong> ☕☕☕<br>Espresso $4 (Double Shot), Latte $6</li>
+        <li><strong>Variety:</strong> ☕☕☕☕☕</li>
+        <li><strong>Seating:</strong> ☕☕<br>Unless you are there early in the morning or late at night, your odds of finding a seat are incredibly low. This might change as summer hits and college students aren't on-campus for a time.</li>
+        <li><strong>Hours:</strong> ☕☕☕☕☕<br>7am–11pm daily</li>
+      </ul>
+    </article>
+    <article class="shop">
+      <h2 style="font-size: 1.8rem;">Arrivaste Coffee <span class="score">Overall: 14/20</span></h2>
+      <img src="Images/Arrivaste.jpg" alt="Interior of Arrivaste Coffee" style="width: 100%; height: 300px; object-fit: cover;" />
+      <p style="font-size: 0.8rem; color: #555;">Last reviewed on: May 2025</p>
+      <ul>
+        <li><strong>Price:</strong> ☕☕☕☕<br>Espresso $3.50, Latte $4.50</li>
+        <li><strong>Variety:</strong> ☕☕☕☕</li>
+        <li><strong>Seating:</strong> ☕☕☕<br>There are no chargers available, which takes this from four cups to three.</li>
+        <li><strong>Hours:</strong> ☕☕☕<br>Weekdays: 7am–4pm <br>Weekends: 8am–4pm</li>
+      </ul>
+    </article>
 
   </main>
 
   <footer>
-    <p>© 2025 Words with Wags</p>
+    <p>© 2025 Words with Wags | Pittsburgh's Premier Coffee Guide</p>
   </footer>
 </body>
 </html>
