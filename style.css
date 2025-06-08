@@ -184,23 +184,19 @@ main {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 1rem;
-  position: relative;
   text-align: center;
-  padding-right: 80px; /* Make space for the score */
+  width: 100%;
 }
 
-.score {
-  font-size: 0.9rem;
+.score-container {
   color: var(--primary-color);
   font-weight: 600;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  background: rgba(227, 24, 55, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
 }
 
 /* Shop Details List */
