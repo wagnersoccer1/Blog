@@ -45,22 +45,22 @@
     </details>
   </section>
 
-  <main>
-    <div class="sort-controls">
-      <div class="sort-content-wrapper">
-        <fieldset id="sort-fieldset">
-          <legend>Sort by criteria:</legend>
-          <label><input type="checkbox" name="criteria" value="price" checked> Price</label>
-          <label><input type="checkbox" name="criteria" value="variety" checked> Variety</label>
-          <label><input type="checkbox" name="criteria" value="seating" checked> Seating</label>
-          <label><input type="checkbox" name="criteria" value="hours" checked> Hours</label>
-          <label><input type="checkbox" name="criteria" value="overall"> Overall</label>
-        </fieldset>
-        <button type="button" id="reset-sort">Reset</button>
-        <p id="active-criteria"></p>
-      </div>
+  <div class="sort-controls">
+    <div class="sort-content-wrapper">
+      <fieldset id="sort-fieldset">
+        <legend>Sort by criteria:</legend>
+        <label><input type="checkbox" name="criteria" value="price" checked> Price</label>
+        <label><input type="checkbox" name="criteria" value="variety" checked> Variety</label>
+        <label><input type="checkbox" name="criteria" value="seating" checked> Seating</label>
+        <label><input type="checkbox" name="criteria" value="hours" checked> Hours</label>
+        <label><input type="checkbox" name="criteria" value="overall"> Overall</label>
+      </fieldset>
+      <button type="button" id="reset-sort">Reset Sorting</button>
+      <p id="active-criteria"></p>
     </div>
+  </div>
 
+  <main>
     <article class="shop">
       <h2 style="font-size: 1.8rem;">Redstart Roasters <span class="score">Overall: 17/20</span></h2>
       <img src="Images/redstart.jpg" alt="Interior of Redstart Roasters" style="width: 100%; height: 300px; object-fit: cover;" />

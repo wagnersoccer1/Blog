@@ -120,7 +120,7 @@ header nav a:hover {
 main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -198,7 +198,7 @@ main {
 .shop li strong {
   color: var(--text-color);
   display: inline;
-  margin-right: 0.5rem;
+  margin-right: 0.25rem;
   font-size: 1.2rem;
 }
 
@@ -207,9 +207,9 @@ main {
 }
 
 .sort-controls {
-  width: 100%;
-  margin: 1rem 0 3rem 0;
-  padding: 0.5rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  padding: 0 2rem;
   text-align: center;
 }
 
@@ -232,7 +232,16 @@ main {
 #sort-fieldset legend {
   font-weight: 600;
   margin-bottom: 1rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+#active-criteria {
+  width: 100%;
+  text-align: center;
   color: var(--text-light);
+  margin-top: 1rem;
+  font-style: italic;
 }
 
 #sort-fieldset label {
