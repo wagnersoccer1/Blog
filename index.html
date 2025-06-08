@@ -1,14 +1,30 @@
 <!DOCTYPE html>
+<!-- 
+  Pittsburgh Coffee Rankings
+  A comprehensive guide to Pittsburgh's coffee scene
+  Features:
+  - Interactive sorting system for coffee shop ratings
+  - Detailed reviews with standardized criteria
+  - Responsive design for all devices
+  - Rich metadata for SEO
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pittsburgh Coffee Rankings | The Ultimate Guide</title>
+  
+  <!-- External Resources -->
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  
+  <!-- SEO Metadata -->
   <meta name="description" content="Discover the best coffee shops in Pittsburgh, rated by price, variety, seating, and hours. Your ultimate guide to Pittsburgh's coffee scene." />
+  <meta name="keywords" content="Pittsburgh coffee, coffee shops, cafe reviews, best coffee Pittsburgh" />
+  <meta name="author" content="Coffee Enthusiast" />
 </head>
 <body>
+  <!-- Header Section with Navigation -->
   <header>
     <div class="title-container">
       <h1>Pittsburgh Coffee Rankings by Vibe</h1>
@@ -19,11 +35,14 @@
     </nav>
   </header>
 
+  <!-- Introduction Section with Rating System Details -->
   <section class="intro">
     <p>
       After traveling the world and using various sites to find the best coffee shops, I wondered: why are we stuck with mediocre listicles for Pittsburgh? I'm rating local coffee shops by price, variety, seating, and hours. 
       <br><strong>Note:</strong> I will review local coffee chains, but don't expect to see Starbucks or Dunkin here.
     </p>
+    
+    <!-- Expandable Rating System Explanation -->
     <details class="ranking-system">
       <summary><strong>About Our Rating System</strong></summary>
       <div class="ranking-details">
@@ -45,22 +64,27 @@
     </details>
   </section>
 
+  <!-- Interactive Sorting Controls -->
   <div class="sort-controls">
     <div class="sort-content-wrapper">
       <fieldset id="sort-fieldset">
         <legend>Sort by criteria:</legend>
+        <!-- Sorting Checkboxes -->
         <label><input type="checkbox" name="criteria" value="price" checked> Price</label>
         <label><input type="checkbox" name="criteria" value="variety" checked> Variety</label>
         <label><input type="checkbox" name="criteria" value="seating" checked> Seating</label>
         <label><input type="checkbox" name="criteria" value="hours" checked> Hours</label>
         <label><input type="checkbox" name="criteria" value="overall"> Overall</label>
+        <label><input type="checkbox" name="criteria" value="recency"> Most Recent</label>
       </fieldset>
       <button type="button" id="reset-sort">Reset Sorting</button>
       <p id="active-criteria"></p>
     </div>
   </div>
 
+  <!-- Main Content - Coffee Shop Reviews -->
   <main>
+    <!-- Individual shop reviews will be dynamically sorted based on criteria -->
     <article class="shop">
       <h2 style="font-size: 1.8rem;">Redstart Roasters <span class="score">Overall: 17/20</span></h2>
       <img src="Images/redstart.jpg" alt="Interior of Redstart Roasters" style="width: 100%; height: 300px; object-fit: cover;" />
