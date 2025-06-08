@@ -101,13 +101,14 @@ main {
 }
 
 .shop h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .score {
@@ -119,10 +120,11 @@ main {
 .shop ul {
   list-style-type: none;
   margin-top: 1rem;
+  padding: 1.5rem;
 }
 
 .shop li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 0.95rem;
   color: var(--text-light);
 }
@@ -131,6 +133,10 @@ main {
   color: var(--text-color);
   display: block;
   margin-bottom: 0.25rem;
+}
+
+.shop p {
+  padding: 0 1.5rem;
 }
 
 .sort-controls {
